@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: #FAFAFA;
+  font-size: 16px;
+  background-color: #EC715F;
+  height: 70px;
+  width: 1024px;
+}
+header img {
+  height: 60px;
+}
+header nav ul {
+  display: flex;
+  justly-content: flex-end;
+}
+
+main img {
+  height: 250px;
+  width: 300px;
+}
