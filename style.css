@@ -19,7 +19,9 @@ header nav ul {
   justly-content: flex-end;
 }
 
-main img {
+.section2 img {
+  display: flex;
+  flex-wrap: wrap;
   height: 250px;
   width: 300px;
 }
