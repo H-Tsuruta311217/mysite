@@ -35,6 +35,7 @@ header a {
   text-decoration: none;
 }
 
+
 #section1 {
   background-image: url(img/mv.png);
   height: 650px;
@@ -59,7 +60,6 @@ header a {
   text-align: center;
   padding-top: 90px;
   padding-bottom: 90px;
-  justify-content: center;
 }
 
 .article {
@@ -69,11 +69,12 @@ header a {
   color: #000000;
 }
 
-.flex {
+.img-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 920px;
+  margin: auto;
 }
 
 #section2 img {
@@ -101,7 +102,7 @@ footer {
   width: 100%;
   height: 60px;
   background-color: #EC715F;
- text-align: center;
+  text-align: center;
 
 
 }
@@ -129,17 +130,24 @@ hr {
  background-color: #EC715F;
  width: 70px;
  border: none;
- align: center;
+ margin: auto;
 }
 
-.box {
+.strength-box {
   display: flex;
   justify-content: space-between;
   width: 980px;
+  margin: auto;
+  padding-top: 8px;
 }
 .textbox {
   width: 320px;
   height: auto;
+}
+
+.textbox p {
+  text-align: left;
+  font-size: 16px;
 }
 
 #section4 {
@@ -156,9 +164,11 @@ hr {
   width: 250px;
 }
 
+
 .introduction {
   display: flex;
-  width: 1024px;
+  margin: auto;
+  
 }
 
 .myname {
@@ -202,10 +212,12 @@ hr {
   display: flex;
   justify-content: center;
   width: 800px;
+  margin: auto;
 }
 address {
   text-align: center;
   width: 400px;
+  font-style: normal;
 }
 .address-box {
   text-align: left;
@@ -226,4 +238,121 @@ address {
 }
 .social-box i {
   padding-right: 20px;
+}
+
+@media screen and (max-width:767px) {
+
+header {
+  background-color: #EC715F;
+  height: 50px;
+  width: 90%;
+  color: #FAFAFA;
+}
+header img {
+  height: 50px;
+  margin-left: 40px;
+}
+
+#section1 {
+  background: url(img/code.png) no-repeat 25% 25%;
+  height: 650px;
+  width: 90%;
+  text-align: center;
+}
+#section1 h1 {
+  padding-top: 200PX;
+  font-size: 40px;
+  color: #FAFAFA;
+}
+#section1 h2 {
+  color: #FAFAFA;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+#section2 {
+  background-color: #ECEFF1;
+  width: 90%;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  justify-content: center;
+  height: 1200px;
+}
+
+.pc { display: none !important; }
+
+.img-box {
+  display: block !important;
+  width: 300px;
+  height: 250px;
+
+}
+#section3 {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.strength-box {
+  display: block !important;
+  justify-content: center;
+  padding-top: 8px;
+  width: 340px;
+}
+
+.textbox {
+  width: 90%;
+  height: auto;
+}
+
+#section4 {
+  width: 90%;
+  justify-content: center;
+  text-align: center;
+}
+
+.introduction {
+  display: block;
+  justify-content: center;
+  margin: auto;
+  width: 340px;
+}
+.profile-img {
+  width: 340px;
+}
+
+.profile-box{
+  width: 340px;
+  text-align: center;
+}
+
+#section5 {
+  text-align: center;
+  width: 90%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  justify-content: center;
+}
+
+.contact-box {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.address-box {
+  text-align: center;
+	display: inline-block;
+}
+.social-box i {
+  padding-right: 8px;
+}
+.social-box {
+  text-align: center;
+	display: inline-block;
+}
 }
