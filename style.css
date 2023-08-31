@@ -30,7 +30,7 @@ header img {
   color: #FAFAFA;
   font-size: 16px;
 }
-a {
+header a {
   color: #FAFAFA;
   text-decoration: none;
 }
@@ -90,7 +90,7 @@ h1 {
   color: #000000;
 }
 
-h2 {
+#section2 h2 {
   font-size: 20px;
   color: #000000;
   margin-top: 10px;
@@ -112,11 +112,16 @@ footer {
 }
 
 #section3 {
+  text-align: center;
   padding-top: 90px;
   padding-bottom: 90px;
   width: 100%;
-  text-align: center;
   justify-content: center;
+}
+
+#section3 h2 {
+  font-size: 20px;
+  color: #000000;
 }
 
 hr {
@@ -135,4 +140,90 @@ hr {
 .textbox {
   width: 320px;
   height: auto;
+}
+
+#section4 {
+  text-align: center;
+  width: 100%;
+  background-color: #ECEFF1;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#section4 img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.introduction {
+  display: flex;
+  width: 1024px;
+}
+
+.myname {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #000000;
+}
+.myskills {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #000000;
+}
+.profile-img {
+  width: 512px;
+}
+
+.profile-box{
+  width: 512px;
+  text-align: left;
+}
+
+#section5 {
+  text-align: center;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#section5 a {
+  color: #000000;
+  display: block;
+  padding-bottom: 20px;
+}
+#section5 h2 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.contact-box {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+}
+address {
+  text-align: center;
+  width: 400px;
+}
+.address-box {
+  text-align: left;
+	display: inline-block;
+}
+.social {
+  text-align: center;
+  width: 400px;
+}
+
+.social-box {
+  text-align: left;
+	display: inline-block;
+}
+
+.social-icon {
+  display: flex;
+}
+.social-box i {
+  padding-right: 20px;
 }
