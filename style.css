@@ -10,13 +10,62 @@ header {
   width: 100%;
   color: #FAFAFA;
 }
+
+/* チェックボックスを非表示にする */
+#menu-btn-check {
+    display: none;
+}
+
+
+.menu-btn {
+    position: absolute;
+    right: 70px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #EC715F;
+    margin-top: 5px;
+    border: 1px solid #FAFAFA;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+
+.header-nav {
+  display: flex;
+  width: 1024px;
+}
 header img {
   height: 60px;
   margin-left: 40px;
 }
+
 .nav-list {
-  display: flex;
-  width: 1024px;
+  text-align: right;
+}
+
+.nav-list-box {
+  text-align: right;
+  margin-left: auto;
+
 }
 .nav-list-img {
   display: inline-block;
@@ -30,6 +79,9 @@ header img {
   color: #FAFAFA;
   font-size: 16px;
 }
+
+
+
 header a {
   color: #FAFAFA;
   text-decoration: none;
@@ -103,9 +155,8 @@ footer {
   height: 60px;
   background-color: #EC715F;
   text-align: center;
-
-
 }
+
 .footer-text {
   color: #FAFAFA;
   font-size: 16px;
@@ -168,7 +219,7 @@ hr {
 .introduction {
   display: flex;
   margin: auto;
-  
+
 }
 
 .myname {
@@ -240,6 +291,16 @@ address {
   padding-right: 20px;
 }
 
+.hamburger {
+  display: none;
+}
+
+@media screen and (min-width:767px) {
+.hamburger-menu {
+  display: none;
+}
+}
+
 @media screen and (max-width:767px) {
 
 header {
@@ -251,6 +312,10 @@ header {
 header img {
   height: 50px;
   margin-left: 40px;
+}
+
+.nav-list {
+  display: none;
 }
 
 #section1 {
@@ -291,7 +356,7 @@ header img {
 #section3 {
   text-align: center;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
   justify-content: center;
   width: 90%;
   margin: auto;
@@ -307,6 +372,15 @@ header img {
 .textbox {
   width: 90%;
   height: auto;
+}
+
+.textbox h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.textbox p {
+  margin-bottom: 10px;
 }
 
 #section4 {
@@ -325,11 +399,15 @@ header img {
   width: 340px;
 }
 
-.profile-box{
+.profile-box {
   width: 340px;
   text-align: center;
 }
 
+.profile-box h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 #section5 {
   text-align: center;
   width: 90%;
@@ -343,6 +421,7 @@ header img {
   justify-content: center;
   text-align: center;
   margin: auto;
+  width: 340px;
 }
 .address-box {
   text-align: center;
@@ -354,5 +433,16 @@ header img {
 .social-box {
   text-align: center;
 	display: inline-block;
+}
+
+address, .social {
+  width: 340px;
+}
+
+footer {
+  width: 90%;
+  height: 60px;
+  background-color: #EC715F;
+  text-align: center;
 }
 }

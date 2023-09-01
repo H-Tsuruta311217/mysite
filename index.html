@@ -12,28 +12,44 @@
 
   <body>
     <header>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list-img">
-            <a href="#section1">
-              <img src="img/logo.png" alt="">
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#section2">Portfolio</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#section3">Feature</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#section4">Profile</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#section5">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      
+      <div class="header-nav">
+        <nav>
+          <ul class="main-nav">
+            <li class="nav-list-img">
+              <a href="#section1">
+                <img src="img/logo.png" alt="">
+              </a>
+            </li>
+          </ul>  
+        </nav> 
+          <!-- ハンバーガーメニュー部分 -->
+       
+        <nav class="navbar">
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        </div>
+        <div class="nav">
+        </nav>  
+        <!-- メニュー -->
+        <nav class="nav-list-box">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="#section2">Portfolio</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#section3">Feature</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#section4">Profile</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#section5">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>  
+      </div>
     </header>
     <main>
       <section id="section1">
